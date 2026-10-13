@@ -1,0 +1,14 @@
+Salve aqui os prints com EXATAMENTE estes nomes (o README.md já aponta para eles):
+
+01-docker-compose.png         terminal com "docker compose ps" mostrando os 3 contêineres (healthy)
+02-swagger-local.png          http://localhost:8080/swagger aberto
+03-mongo-express.png          http://localhost:8081 mostrando o banco "ecocoleta" e as 5 collections
+04-pipeline-visao-geral.png   GitHub > Actions > execução com os 4 jobs em verde (gráfico)
+05-pipeline-build-testes.png  job "1. Build e Testes" aberto no passo "Executar testes automatizados" (Passed: 28)
+06-pipeline-docker.png        job "2. Build e Push da Imagem Docker" concluído
+07-pipeline-deploy-staging.png job "3. Deploy - Staging" com o smoke test "Aplicação saudável"
+08-aprovacao-producao.png     tela "Review deployments" pedindo aprovação de production
+09-pipeline-deploy-producao.png job "4. Deploy - Produção" com o smoke test OK
+10-staging.png                navegador na URL de staging mostrando "ambiente": "Staging"
+11-producao.png               navegador na URL de produção mostrando "ambiente": "Production"
+12-azure-recursos.png         Portal Azure > Resource group rg-ecocoleta-rm557663 com os recursos
